@@ -90,8 +90,8 @@ class User(db.Model):
     posts = db.relationship('Post', backref='author', lazy=True)
 
 
-class Post_ru(db.Model):
-    __tablename__ = "posts_ru"
+class Post(db.Model):
+    __tablename__ = "posts"
 
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(200), unique=False, nullable=False)
@@ -101,27 +101,6 @@ class Post_ru(db.Model):
     tags = db.relationship('Tag', backref='post_tag', lazy=True, cascade="all, delete-orphan")
     date_posted = db.Column(db.DateTime, nullable=False, default=datetime.now)
 
-class Post_eng(db.Model):
-    __tablename__ = "posts_eng"
-
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(200), unique=False, nullable=False)
-    content = db.Column(db.Text(60), nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=True)
-    comments = db.relationship('Comment', backref='article', lazy=True, cascade="all, delete-orphan")
-    tags = db.relationship('Tag', backref='post_tag', lazy=True, cascade="all, delete-orphan")
-    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.now)
-
-class Post_kz(db.Model):
-    __tablename__ = "posts_kz"
-
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(200), unique=False, nullable=False)
-    content = db.Column(db.Text(60), nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=True)
-    comments = db.relationship('Comment', backref='article', lazy=True, cascade="all, delete-orphan")
-    tags = db.relationship('Tag', backref='post_tag', lazy=True, cascade="all, delete-orphan")
-    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.now)
 
 class Comment(db.Model):
     __tablename__ = "comments"
@@ -159,9 +138,7 @@ class SecureModuleView(ModelView):
 from flask_admin.base import MenuLink
 
 admin.add_view(SecureModuleView(User, db.session))
-admin.add_view(SecureModuleView(Post_ru, db.session))
-admin.add_view(SecureModuleView(Post_kz, db.session))
-admin.add_view(SecureModuleView(Post_eng, db.session))
+admin.add_view(SecureModuleView(Post, db.session))
 admin.add_view(SecureModuleView(Comment, db.session))
 admin.add_view(SecureModuleView(Tag, db.session))
 admin.add_link(MenuLink(name='Main page', endpoint='index'))
