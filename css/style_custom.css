@@ -1,0 +1,123 @@
+.logo-list {
+    padding: 20px 0;
+    text-align: center;
+}
+.logo-list img {
+    display: inline-block;
+    max-width: 85%;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-filter: grayscale(100);
+    -moz-filter: grayscale(100);
+    filter: grayscale(100);
+}
+.logo-list img:hover {
+    filter: none;
+    transform: scale(1.2);
+    -webkit-filter: none;
+    -moz-filter: none;
+}
+
+
+.card-promotion, .we-achived-numbers {
+    display: inline-block;
+    max-width: 85%;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-filter: grayscale(100);
+    -moz-filter: grayscale(100);
+    filter: grayscale(100);
+}
+.card-promotion:hover, .we-achived-numbers:hover{
+    filter: none;
+    transform: scale(1.1);
+    -webkit-filter: none;
+    -moz-filter: none;
+}
+
+.zoom-11 {
+    display: inline-block;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-filter: grayscale(100);
+    -moz-filter: grayscale(100);
+    filter: grayscale(100);
+}
+
+
+.zoom-11:hover {
+    filter: none;
+    transform: scale(1.07);
+    -webkit-filter: none;
+    -moz-filter: none;
+}
+.custom-btn {
+    width: 200px;
+    height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-11 {
+    border: none;
+    background: #219EBC;
+      background: linear-gradient(0deg, #ffc107 0%, #ffc107 100%);
+      color: #fff;
+      overflow: hidden;
+  }
+  .btn-11:hover {
+      text-decoration: none;
+      color: #fff;
+  }
+  .btn-11:before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -180px;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      background-color: #fff;
+      animation: shiny-btn1 3s ease-in-out infinite;
+  }
+  .btn-11:hover{
+    box-shadow: 0 0 2px 0 #ffc107 inset, 0 0 2px 2px #ffc107;
+    color: #ffc107;
+  }
+  .btn-11:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  }
+  
+  
+  @-webkit-keyframes shiny-btn1 {
+      0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+      80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+      81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+      100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+  }
+
+  .nav-bg {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 0.1s ease-in-out infinite;
+  }

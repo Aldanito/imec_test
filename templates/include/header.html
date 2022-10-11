@@ -1,0 +1,95 @@
+<!-- Start header section  -->
+<div class="container-fluid">
+    <div class="row bg-secondary py-2 px-xl-5">
+        <div class="col-lg-9 d-none d-lg-block">
+            <div class="d-inline-flex align-items-center">
+ 
+
+                <a  class="nav-item nav-link" href={{ url_for('login') }}>Sign in</a>
+
+                <i class="fa-solid fa-envelope i-color-blue px-3"></i>
+                <a class="text-dark font-weight-bold" href=""> imec@umc.org.kz</a>
+                <span class="text-muted i-color-blue px-2">|</span>
+                <i class="fa-solid fa-phone i-color-blue px-1"></i>
+                <a class="text-dark font-weight-bold" href="">+ 7 (7172) 69-25-41</a>
+            </div>
+        </div>
+        <div class="col-lg-1 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-dark px-2" href="">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="text-dark px-2" href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-dark px-2" href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-dark pl-2" href="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-2 text-center text-lg-right">
+            <div class="lang d-inline-flex align-items-center">
+                <a class="text-dark font-weight-bold px-2" href=""><i class="lang_ru">RU</i></a>
+                <a class="text-dark font-weight-bold px-2" href=""><i class="lang_kz">KZ</i></a>
+                <a class="text-dark font-weight-bold px-2" href=""><i class="lang_en">EN</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center py-3 px-xl-5">
+        <div class="col-lg-3 d-none d-lg-block text-center">
+            <a href="" class="text-decoration-none">
+                <p><a href="lorem.html"><img src="{{ url_for('static', filename= 'img/favicon.png') }}" width="150" height="120" alt="lorem"></a></p>
+            </a>
+        </div>
+        <div class="col-lg-6 col-6 text-left">
+            <form action="">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Поиск по сайту">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-transparent text-primary">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-3 col-3">
+            <button class="custom-btn btn-11 text-dark font-weight-bold" data-toggle="modal" data-target="#ticket">Заказать звонок<div class="dot"></div></button>
+            {% include 'sections/modal_ticket.html' %}
+        </div>
+    <nav class="navbar navbar-expand-lg navbar-light pb-5">
+        <div class="collapse navbar-collapse justify-content-center bg-primary" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link nav-text zoom-11" href="#">ГЛАВНАЯ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text zoom-11" href="#">НОВОСТИ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text zoom-11" href="#">ТОВАРЫ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text zoom-11" href="#">УСЛУГИ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text zoom-11" href="#">ЗАКУПКИ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text zoom-11" href="#">О КОМПАНИИ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text zoom-11" href="#">ВАКАНСИИ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text zoom-11" href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- End navbar -->
+</div>
+<!-- End header section -->

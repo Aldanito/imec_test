@@ -1,0 +1,263 @@
+{% extends 'include/base.html' %}
+{% block title %} Innovation Medical Engineering Center {% endblock %}
+{% block content %}
+    <section>
+        <!-- Start Catalog products -->
+        <div class="container-fluid mb-3">
+            <div class="row border-top px-xl-5">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                        <h5 class="m-0 text-white">КАТАЛОГ</h5>
+                        <i class="fa fa-angle-down text-dark"></i>
+                    </a>
+                    <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                        <div class="navbar-nav w-100 overflow-hidden">
+                            <a href="" class="nav-item nav-link nav-list">Диагностическое оборудование</a>
+                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
+                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
+                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
+                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
+                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
+                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
+                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-9">
+                    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="height: 410px;">
+                                <img class="img-fluid" src="{{ url_for('static', filename= 'img/carousel-1.jpg') }}" alt="Image">
+                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                    <div class="p-3" style="max-width: 700px;">
+                                        <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
+                                        <h3 class="display-4 text-white font-weight-semi-bold mb-4">Fashionable Dress</h3>
+                                        <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 410px;">
+                                <img class="img-fluid" src="{{ url_for('static', filename= 'img/carousel-2.jpg') }}" alt="Image">
+                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                    <div class="p-3" style="max-width: 700px;">
+                                        <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
+                                        <h3 class="display-4 text-white font-weight-semi-bold mb-4">Reasonable Price</h3>
+                                        <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                            <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                                <span class="carousel-control-prev-icon mb-n2"></span>
+                            </div>
+                        </a>
+                        <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                            <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                                <span class="carousel-control-next-icon mb-n2"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Catalog products -->
+        <!-- Start Medical service -->
+        <div class="container-fluid pt-5">
+            <div class="row pt-5 pb-5" style="background-color: #F8FCFC">
+                <div class="card-p1 col-md-6 d-flex align-content-center flex-wrap pt-5 pl-5">
+                        <h1 class="zoom-11 text-dark">Медицинские услуги</h1>
+                        <span class="zoom-11">We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.</span></div>
+                <div class="col-md-6 d-flex align-content-center flex-wrap justify-content-center pt-5 pb-5 pl-5">
+                    <div class="row pl-5">
+                        <div class="card-promotion card my-3 mx-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card-promotion card my-3 mx-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pl-5">
+                        <div class="card-promotion card my-3 mx-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card-promotion card my-3 mx-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Medical service -->
+                <!-- Start we achieved -->
+                <div class="container-fluid bg-primary">
+                    <div class="row justify-content-center">
+                        <div class="we-achived text-center text-white">
+                            <h1 class="zoom-11 py-5">Наши достижения</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around pb-5">
+                        <div class="we-achived-numbers justify-content-center">
+                            <h1 class="text-center">30</h1>
+                            <p>Клиент</p>
+                        </div>
+                        <div class="we-achived-numbers justify-content-center">
+                            <h1 class="text-center">300+</h1>
+                            <p class="pl-2">Установок</p>
+                        </div>
+                        <div class="we-achived-numbers justify-content-center">
+                            <h1 class="text-center">8</h1>
+                            <p>На рынке</p>
+                        </div>
+                
+                    </div>
+                </div>
+                <!-- End we achieved -->
+        <!-- Start IT services -->
+        <div class="container-fluid">
+            <div class="row pt-5 bg-light">
+                <div class="card-p1 col-md-6 d-flex align-content-center flex-wrap pt-5 pb-5 pl-5">
+                        <h1 class="zoom-11">IT услуги</h1>
+                        <span class="zoom-11">We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.</span></div>
+                <div class="col-md-6 d-flex align-content-center flex-wrap justify-content-center pt-5 pb-5 pl-5">
+                    <div class="row pl-5">
+                        <div class="card-promotion card my-3 mx-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card-promotion card my-3 mx-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pl-5">
+                        <div class="card-promotion card my-3 mx-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card-promotion card my-3 mx-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End IT services -->
+    
+        <!-- Start our customers -->
+        <div class="container-fluid bg-primary pb-5">
+            <div class="we-achived"><h1 class="text-center text-white py-5">Наши клиенты</h1></div>
+            <div class="row justify-content-center">
+                <a href="#">
+                    <div class="card-promotion card my-3 mx-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Название карточки</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-promotion card my-3 mx-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Название карточки</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-promotion card my-3 mx-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Название карточки</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-promotion card my-3 mx-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Название карточки</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-promotion card my-3 mx-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Название карточки</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End our customers -->
+        <!-- Start our customers -->
+        <div class="container-fluid">
+            <div class="row pt-5 bg-light">
+                <div class="card-p1 col-md-6 d-flex align-content-center flex-wrap pt-5 pb-5 pl-5">
+                        <h1 class="text-dark zoom-11">Наши партнеры</h1>
+                        <span class="zoom-11 px-2">We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.</span></div>
+                <div class="col-md-6 d-flex logo-list align-content-center flex-wrap justify-content-center pt-5 pb-5">
+                    <div class="col-lg-4 col-md-4 col-6">
+                        <a href="#"><img src="https://www.markuptag.com/images/bluehost-logo.png" class="img-fluid"
+                                alt="Bluehost logo"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6">
+                        <a href="#"><img src="https://www.markuptag.com/images/hostgator-logo.png" class="img-fluid"
+                                alt="Hostgator logo"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6">
+                        <a href="#"><img src="https://www.markuptag.com/images/greengeeks-logo.png" class="img-fluid"
+                                alt="Green Geeks logo"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6">
+                        <a href="#"><img src="https://www.markuptag.com/images/wordpress-logo.png" class="img-fluid"
+                                alt="WordPress logo"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6">
+                        <a href="#"><img src="https://www.markuptag.com/images/dreamhost-logo.png" class="img-fluid"
+                                alt="DreamHost logo"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6">
+                        <a href="#"><img src="https://www.markuptag.com/images/hostinger-logo.png" class="img-fluid"
+                                alt="Hostinger logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End our customers -->
+        
+    </section>
+{% endblock %}
+
