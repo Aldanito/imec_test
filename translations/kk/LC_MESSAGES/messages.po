@@ -1,0 +1,57 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2014 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+
+msgid "MAIN PAGE"
+msgstr "БАС ПАРАҚША"
+
+
+#: multilang-app.py:50
+msgid "no redirect"
+msgstr "без перенаправления"
+
+msgid "NEWS"
+msgstr "ЖАНАЛЫҚТАР"
+
+msgid "ITEMS"
+msgstr "ТАУАРЛАР"
+
+msgid "SERVICES"
+msgstr "ҚЫЗМЕТТЕР"
+
+msgid "PURCHASING"
+msgstr "САТЫП АЛҒАНДАР"
+
+msgid "ABOUT"
+msgstr "КОМПАНИЯ ТУРАЛЫ"
+
+msgid "VACANCIES"
+msgstr "ВАКАНСИЯЛАР"
+
+msgid "CONTACTS"
+msgstr "КОНТАКТІЛЕР"
+
+msgid "en"
+msgstr "kk"
+
+msgid "Admin IMEC Login"
+msgstr "IMEC Администраторы"
+
+msgid "Sign in"
+msgstr "Кіру"
+
+msgid "Read More"
+msgstr "Толық Ақпарат"
+
+msgid "Return"
+msgstr "Қайта Оралу"
+
+msgid "Next"
+msgstr "Келесі"
+
+msgid "Previous"
+msgstr "Алдыңғы"

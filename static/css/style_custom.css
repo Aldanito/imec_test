@@ -19,6 +19,14 @@
 }
 
 
+.pagination {
+    margin: 0 auto;
+}
+
+.pagination span {
+    font-size: 2em;
+    margin-right: 10px;
+}
 .card-promotion, .we-achived-numbers {
     display: inline-block;
     max-width: 85%;

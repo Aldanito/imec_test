@@ -134,7 +134,10 @@ strong {
 small {
   font-size: 80%;
 }
-
+#hp  {
+  float: right;    
+   margin: 0 0 0 15px;
+  }
 sub,
 sup {
   position: relative;
