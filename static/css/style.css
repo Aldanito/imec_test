@@ -19,7 +19,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #219EBC;
+  --primary: #326273;
   --secondary: #EDF1FF;
   --success: #28a745;
   --info: #17a2b8;
@@ -155,7 +155,7 @@ sup {
 }
 
 a {
-  color: #219EBC;
+  color: #326273;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2368,8 +2368,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #212529;
-  background-color: #219EBC;
-  border-color: #219EBC;
+  background-color: #326273;
+  border-color: #326273;
 }
 
 .btn-primary:hover {
@@ -2385,8 +2385,8 @@ fieldset:disabled a.btn {
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #212529;
-  background-color: #219EBC;
-  border-color: #219EBC;
+  background-color: #326273;
+  border-color: #326273;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
@@ -2661,14 +2661,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #219EBC;
-  border-color: #219EBC;
+  color: #326273;
+  border-color: #326273;
 }
 
 .btn-outline-primary:hover {
   color: #212529;
-  background-color: #219EBC;
-  border-color: #219EBC;
+  background-color: #326273;
+  border-color: #326273;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -2676,15 +2676,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #219EBC;
+  color: #326273;
   background-color: transparent;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #212529;
-  background-color: #219EBC;
-  border-color: #219EBC;
+  background-color: #326273;
+  border-color: #326273;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
@@ -2918,7 +2918,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #219EBC;
+  color: #326273;
   text-decoration: none;
 }
 
@@ -3215,7 +3215,7 @@ input[type="button"].btn-block {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #219EBC;
+  background-color: #326273;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -3504,8 +3504,8 @@ input[type="button"].btn-block {
 
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #219EBC;
-  background-color: #219EBC;
+  border-color: #326273;
+  background-color: #326273;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
@@ -3565,8 +3565,8 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  border-color: #219EBC;
-  background-color: #219EBC;
+  border-color: #326273;
+  background-color: #326273;
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
@@ -3790,7 +3790,7 @@ input[type="button"].btn-block {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #219EBC;
+  background-color: #326273;
   border: 0;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
@@ -3818,7 +3818,7 @@ input[type="button"].btn-block {
 .custom-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #219EBC;
+  background-color: #326273;
   border: 0;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
@@ -3849,7 +3849,7 @@ input[type="button"].btn-block {
   margin-top: 0;
   margin-right: 0.2rem;
   margin-left: 0.2rem;
-  background-color: #219EBC;
+  background-color: #326273;
   border: 0;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
@@ -3977,7 +3977,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #219EBC;
+  background-color: #326273;
 }
 
 .nav-fill > .nav-link,
@@ -4191,7 +4191,11 @@ input[type="button"].btn-block {
     display: none;
   }
 }
-
+@media (min-width: 1200px) {
+  .navbar-expand-lg .navba {
+    display: none;
+  }
+}
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
@@ -4583,7 +4587,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #219EBC;
+  color: #326273;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
@@ -4609,8 +4613,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #219EBC;
-  border-color: #219EBC;
+  background-color: #326273;
+  border-color: #326273;
 }
 
 .page-item.disabled .page-link {
@@ -4671,7 +4675,7 @@ a.badge:hover, a.badge:focus {
 
 .badge-primary {
   color: #212529;
-  background-color: #219EBC;
+  background-color: #326273;
 }
 
 a.badge-primary:hover, a.badge-primary:focus {
@@ -4972,7 +4976,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #219EBC;
+  background-color: #326273;
   transition: width 0.6s ease;
 }
 
@@ -5048,8 +5052,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #219EBC;
-  border-color: #219EBC;
+  background-color: #326273;
+  border-color: #326273;
 }
 
 .list-group-item + .list-group-item {
@@ -6095,7 +6099,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #219EBC !important;
+  background-color: #326273 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6222,7 +6226,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #219EBC !important;
+  border-color: #326273 !important;
 }
 
 .border-secondary {
@@ -9264,7 +9268,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #219EBC !important;
+  color: #326273 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9476,7 +9480,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #219EBC;
+  color: #326273;
 }
 
 @media (max-width: 991.98px) {
@@ -9556,7 +9560,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .product-item .btn:hover {
-  color: #219EBC !important;
+  color: #326273 !important;
 }
 
 .contact-form .help-block ul {
@@ -9592,16 +9596,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav-text {
   color: #fff!important; 
-  font-size: 1.2rem!important;
+  font-size: 1.4rem!important;
   padding-right: 3rem!important;
-  padding-left: 1rem!important;
+  padding-left: 3rem!important;
 }
 
 .nav-list {
   font-size: 1.1rem!important;
 }
 .card-p1 h1 {
-  font-size: 4rem!important;
+  /* font-size: 4rem!important; */
 }
 .card-p1 span {
   font-size: 1.5rem!important;
@@ -9642,4 +9646,63 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 1.2vw;
+}
+.nav-link-mobile {
+  margin: 10px 10px!important;
+} 
+.nav-item-mobile {
+  border-bottom: 1px solid #eee;
+} 
+.text-primary {
+  color: #326273;
+}
+.text-size {
+  font-size: 155rem;
+}
+
+.card-text {
+  font-size: 1.3rem;
+  color:#fff!important;
+  text-align: center;
+  font-family: 'Alice', serif;
+}
+.card-promotion {
+  background-color: #326273;
+}
+.medical-service i {
+  font-size: 10rem;
+  color: #688B58;
+  padding-right: 7rem;
+}
+<<<<<<< HEAD
+
+=======
+.service p {
+  padding-top:2ch;
+  align-items: center;
+  font-size: 1.24rem;
+  color: #326273;
+}
+>>>>>>> 1a340e88628eb4d4f4d5efb3f557148e4aca71d9
+.headline-blue {
+  color: #326273;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 576px) { 
+  .headline-blue {
+    color: #326273;
+    font-size: 4rem;
+  }
+}
+
+.headcompany {
+  width: 50%;
+  height: 25%;
+}
+
+.our-team {
+  height:800px;
+  width: 1600px;
+  background-image: url(https://thumb.tildacdn.com/tild3334-3534-4462-b939-343933653330/-/format/webp/0ce9e214652687362b20.png);
 }

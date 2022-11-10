@@ -4,23 +4,30 @@
 <!DOCTYPE html>
 
   <body>
-    <h1 class="text-center mt-4 mb-5">{{ _('%(who)s', who=header_1) }}</h1>
+    <h1 lang ='en' class="text-center mt-4 mb-5">NEWS</h1>
+    <h1 lang ='ru' class="text-center mt-4 mb-5">НОВОСТИ</h1>
+    <h1 lang ='kz' class="text-center mt-4 mb-5">ЖАҢАЛЫҚТАР</h1>
     <div class="row mt-5">
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <div class="column ">
-          {% if l == 'en' %}
             {% for news in news_articles.items %}
               
             <div class="card mb-5" style="background-color:#f8f9fa;">
-              <h3 class="text-center mt-4">{{ news.title_en[:100] }}</h3> 
+              <h3 lang = 'en' class="text-center mt-4 text-dark" >{{ news.title_en[:100] }}</h3> 
+              <h3 lang = 'ru' class="text-center mt-4 text-dark" >{{ news.title_ru[:100] }}</h3> 
+              <h3 lang = 'kz' class="text-center mt-4 text-dark">{{ news.title_kz[:100] }}</h3> 
               <div class="card-body" style="background-color:#f8f9fa;">
-                <a href="/en/news_page/{{news.id}}" >
-                  <img  src='/static/files/{{ news.path }}'  class="btn btn-primary"  height = 300 width = 400 alt="" style="float: left; margin-right: 15px;">
+                <a href="/news_page/{{news.id}}" >
+                  <img  src='/static/files/{{ news.path }}'  class="btn btn-info"  height = 300 width = 400 alt="" style="float: left; margin-right: 15px;">
                 </a>
-          <p class="text-grey" >{{ news.en[:900]|safe }} &#8230; </p>
+          <h6 lang = 'en' class="text-grey" >{{ news.en[:900]|safe }} </h6>
+          <h6 lang = 'ru' class="text-grey" >{{ news.ru[:900]|safe }} </h6>
+          <h6 lang = 'kz' class="text-grey" >{{ news.kz[:900]|safe }} </h6>
                 <div class="text-center">
-                  <a  href="/en/news_page/{{news.id}}" style="float: center;"  class="btn btn-primary">{{ _('%(who)s', who=read)}}</a>
+                  <a lang = 'en' href="/news_page/{{news.id}}" style="float: center;"  class="btn btn-info">Read More</a>
+                  <a lang = 'ru' href="/news_page/{{news.id}}" style="float: center;"  class="btn btn-info">Читать Полностью</a>
+                  <a lang = 'kz' href="news_page/{{news.id}}" style="float: center;"  class="btn btn-info">Толық оқыңыз</a>
                 </div>
 
               </div>
@@ -29,49 +36,6 @@
           </div>
 
             {% endfor %}
-          {% endif %}
-          {% if l == 'kk' %}
-            {% for news in news_articles.items %}
-              
-            <div class="card mb-5" style="background-color:#f8f9fa;">
-              <h3 class="text-center mt-4">{{ news.title_kz[:100] }}</h3> 
-              <div class="card-body" style="background-color:#f8f9fa;">
-                <a href="/kk/news_page/{{news.id}}" >
-                  <img  src='/static/files/{{ news.path }}'  class="btn btn-primary"  height = 300 width = 400 alt="" style="float: left; margin-right: 15px;">
-                </a>
-          <p class="text-grey" >{{ news.kz[:900]|safe }} &#8230; </p>
-                <div class="text-center">
-                  <a  href="/kk/news_page/{{news.id}}" style="float: center;"  class="btn btn-primary">{{ _('%(who)s', who=read)}}</a>
-                </div>
-
-              </div>
-              <p class="text-dark" align="right">{{ news.date_posted|safe }} </p>
-
-          </div>
-
-            {% endfor %}
-          {% endif %}
-          {% if l=='ru' %}
-          {% for news in news_articles.items %}
-            
-          <div class="card mb-5" style="background-color:#f8f9fa;">
-            <h3 class="text-center mt-4">{{ news.title_ru[:100] }}</h3> 
-            <div class="card-body" style="background-color:#f8f9fa;">
-              <a href="/ru/news_page/{{news.id}}" >
-                <img  src='/static/files/{{ news.path }}'  class="btn btn-primary"  height = 300 width = 400 alt="" style="float: left; margin-right: 15px;">
-              </a>
-        <p class="text-grey" >{{ news.ru[:900]|safe }} &#8230; </p>
-              <div class="text-center">
-                <a  href="/ru/news_page/{{news.id}}" style="float: center;"  class="btn btn-primary">{{ _('%(who)s', who=read)}}</a>
-              </div>
-
-            </div>
-            <p class="text-dark" align="right">{{ news.date_posted|safe }} </p>
-
-        </div>
-
-          {% endfor %}
-        {% endif %}
         </div>
       </div>
       <div class="col-md-2"></div>
@@ -79,24 +43,32 @@
     <div class="container-fluid d-flex justify-content-center">
           <ul class="pagination" >
       {% if news_articles.has_prev %}
-       <li class="page-item" ><a class="page-link" href="{{ url_for('news_articles', page_num=news_articles.prev_num, lang = lang) }}">{{ _('%(who)s', who=previous)}}</a></li>
+       <li lang = 'en' class="page-item" ><a class="page-link" href="{{ url_for('news_articles', page_num=news_articles.prev_num) }}">Previous</a></li>
+       <li lang = 'ru' class="page-item" ><a class="page-link" href="{{ url_for('news_articles', page_num=news_articles.prev_num) }}">Предыдущий</a></li>
+       <li lang = 'kz' class="page-item" ><a class="page-link" href="{{ url_for('news_articles', page_num=news_articles.prev_num) }}">Алдыңғы</a></li>
       {% else %}
-       <li class="page-item disabled"><a class="page-link">{{ _('%(who)s', who=previous)}}</a>
+        <li lang = 'en' class="page-item disabled"><a class="page-link">Previous</a>
+        <li lang = 'ru' class="page-item disabled"><a class="page-link">Предыдущий</a>
+        <li lang = 'kz' class="page-item disabled"><a class="page-link">Алдыңғы</a>    
       {% endif %}
        </li>
          
       {% for page in news_articles.iter_pages(left_edge=3, right_edge=3) %}
       {% if page %}
-       <li class="page-item"><a class="page-link" href="/{{ _('%(who)s', who=l)}}/news/{{page}}">{{ page }}</a></li>
+       <li class="page-item"><a class="page-link" href="/news/{{page}}">{{ page }}</a></li>
       {% else %}
        <li class="page-item disabled"  id="example_ellipsis"><a href="#" class="page-link">…</a></li> 
       {% endif %}
       {% endfor %}
        
       {% if news_articles.has_next %}
-       <li class="page-item"><a class="page-link" href="{{ url_for('news_articles', page_num=news_articles.next_num, lang = lang) }}">{{ _('%(who)s', who=next)}}</a></li>
+       <li lang = 'en' class="page-item"><a class="page-link" href="{{ url_for('news_articles', page_num=news_articles.next_num) }}">Next</a></li>
+       <li lang = 'ru' class="page-item"><a class="page-link" href="{{ url_for('news_articles', page_num=news_articles.next_num) }}">Следующий</a></li>
+       <li lang = 'kz' class="page-item"><a class="page-link" href="{{ url_for('news_articles', page_num=news_articles.next_num) }}">Келесі</a></li>
       {% else %}
-       <li class="page-item disabled"><a class="page-link">{{ _('%(who)s', who=next)}}</a>
+      <li lang = 'en' class="page-item disabled"><a class="page-link">Next</a>
+      <li lang = 'ru' class="page-item disabled"><a class="page-link">Следующий</a>
+      <li lang = 'kz' class="page-item disabled"><a class="page-link">Келесі</a>
       {% endif %}
        </ul>
     </div>

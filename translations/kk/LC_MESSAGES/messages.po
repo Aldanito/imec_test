@@ -29,8 +29,8 @@ msgstr "САТЫП АЛҒАНДАР"
 msgid "ABOUT"
 msgstr "КОМПАНИЯ ТУРАЛЫ"
 
-msgid "VACANCIES"
-msgstr "ВАКАНСИЯЛАР"
+msgid "CERTIFICATES"
+msgstr "СЕРТИФИКАТТАР"
 
 msgid "CONTACTS"
 msgstr "КОНТАКТІЛЕР"
@@ -55,3 +55,103 @@ msgstr "Келесі"
 
 msgid "Previous"
 msgstr "Алдыңғы"
+
+msgid "Resuscitation equipment"
+msgstr "Реанимационное оборудование"
+
+msgid "Surgical equipment"
+msgstr "Хирургическое оборудование"
+
+msgid "Diagnostic equipment"
+msgstr "Диагностическое оборудование"
+
+msgid "Physiotherapy equipment"
+msgstr "Физиотерапевтическое оборудование"
+
+msgid "X-ray equipment"
+msgstr "Рентгенологическое оборудование"
+
+msgid "CATALOG"
+msgstr "КАТАЛОГ"
+
+msgid "IMEC provides a wide range of services"
+msgstr "IMEC предоставляет широкий ассортимент услуг"
+
+msgid "(service, repair, equipment of clinics and turnkey departments)"
+msgstr "(сервис, ремонт, оснащение клиник и отделений «под ключ»)"
+
+msgid "Answer and solutions by type"
+msgstr "Ответ и решения по видам"
+
+msgid "medical equipment and terms of sale as soon as possible"
+msgstr "медицинского оборудования и условиям продажи в кратчайшие сроки"
+
+msgid "Determining the needs of clinics in new technology,"
+msgstr "Определение потребностей клиник в новой технике,"
+
+
+msgid "preparation of technical specifications and clinical and technical justification, cost and quality assessment, acceptance and commissioning of new medical equipment"
+msgstr "подготовке технических спецификаций и клинико-технического обоснования, оценки стоимости и качества, приемке и вводе в эксплуатацию новой медицинской техники"
+
+msgid "Our achievements"
+msgstr "Наши достижения"
+
+msgid "Clients"
+msgstr "Клиенты"
+
+msgid "installations"
+msgstr "Установок"
+
+msgid "On the market"
+msgstr "На рынке"
+
+msgid "Request a call"
+msgstr "Заказать звонок"
+
+msgid "FULL NAME:"
+msgstr "ФИО:"
+
+msgid "Phone number:"
+msgstr "Номер телефона:"
+
+msgid "Send"
+msgstr "Отправить"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Request a call"
+msgstr "Заказать звонок"
+
+msgid "Site search"
+msgstr "Поиск по сайту"
+
+msgid "The dynamism of the work of IMEC LLP is a combination of qualifications and a growth-oriented culture. Answer and decisions on the types of medical equipment and conditions of sale in the shortest possible time."
+msgstr "Динамизм работы ТОО "IMEC"- совокупность квалификации и культуры, ориентированная на рост. Ответ и решения по видам медицинского оборудования и условиям продажи в кратчайшие сроки."
+
+msgid "The field of activity of IMEC is services for maintenance, repair and supply of medical equipment and medical gas supply systems"
+msgstr "Сфера деятельности IMEC – услуги по сервисному обслуживанию, ремонту и поставкам медицинского оборудования и систем медицинского газоснабжения"
+
+msgid "Director: Kolobaev O.S."
+msgstr "Директор: Колобаев О.С"
+
+msgid "Medical services"
+msgstr "Медицинские услуги"
+
+msgid "Service, diagnostics and repair of medical equipment and medical gas supply equipment"
+msgstr "Сервисное обслуживание, диагностика и ремонт медицинской техники и оборудования медицинского газоснабжения"
+
+msgid "Purchase and supply of medical equipment and spare parts from manufacturers on the basis of distribution agreements for the supply, installation and commissioning."
+msgstr "Закуп и поставка медоборудования и запчастей от заводов-изготовителей на основе дистрибьюторских соглашений на поставку, установка и ввод в эксплуатацию."
+
+msgid "Warranty and post-warranty"
+msgstr "Гарантийное и послегарантийное"
+
+msgid "Maintenance,"
+msgstr "техническое обслуживание,"
+
+msgid "prevention"
+msgstr "профилактика"
+
+msgid "Equipment with delivery, installation of clinics, clinic departments, equipment of intensive care units and operating units ('turnkey')"
+msgstr "Оснащение с поставкой, монтажом клиник, отделений клиник, оснащение отделений реанимации и операционных блоков («под ключ»)"

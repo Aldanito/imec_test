@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang>
 
 <head>
     <meta charset="utf-8">
@@ -18,14 +18,18 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/1dbc28869e.js" crossorigin="anonymous"></script>
-
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <!-- Libraries Stylesheet -->
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ url_for('static', filename= 'css/style.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename= 'css/style_custom.css') }}" rel="stylesheet">
-    <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="{{ url_for('static', filename= 'css/icofont.min.css') }}" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -39,6 +43,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="{{ url_for('static', filename= 'lib/easing/easing.min.js') }}"></script>
     <script src="{{ url_for('static', filename= 'lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+    
 
     <!-- Contact Javascript File -->
     <script src="{{ url_for('static', filename= 'mail/jqBootstrapValidation.min.js') }}"></script>

@@ -32,9 +32,6 @@
     max-width: 85%;
     padding: 15px 0;
     transition: all 0.3s ease-in-out;
-    -webkit-filter: grayscale(100);
-    -moz-filter: grayscale(100);
-    filter: grayscale(100);
 }
 .card-promotion:hover, .we-achived-numbers:hover{
     filter: none;

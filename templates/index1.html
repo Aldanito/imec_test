@@ -3,105 +3,178 @@
 {% block content %}
     <section>
         <!-- Start Catalog products -->
-        <div class="container-fluid mb-3">
-            <div class="row border-top px-xl-5">
-                <div class="col-lg-3 d-none d-lg-block">
-                    <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
-                        <h5 class="m-0 text-white">КАТАЛОГ</h5>
-                        <i class="fa fa-angle-down text-dark"></i>
-                    </a>
-                    <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
-                        <div class="navbar-nav w-100 overflow-hidden">
-                            <a href="" class="nav-item nav-link nav-list">Диагностическое оборудование</a>
-                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
-                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
-                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
-                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
-                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
-                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
-                            <a href="" class="nav-item nav-link nav-list">Анестезия и реанимация</a>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-lg-9">
-                    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </nav>
-                    <div id="header-carousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" style="height: 410px;">
-                                <img class="img-fluid" src="{{ url_for('static', filename= 'img/carousel-1.jpg') }}" alt="Image">
-                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                    <div class="p-3" style="max-width: 700px;">
-                                        <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
-                                        <h3 class="display-4 text-white font-weight-semi-bold mb-4">Fashionable Dress</h3>
-                                        <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
+            <div class="container-fluid mb-5">
+                <div class="row border-top px-xl-5">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                            <h5 lang='ru' class="m-0 text-white">КАТАЛОГ</h5>
+                            <h5 lang='en' class="m-0 text-white">CATALOG</h5>
+                            <h5 lang='kz' class="m-0 text-white">КАТАЛОГ</h5>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                            <div class="navbar-nav w-100 overflow-hidden">
+                                
+                                    <a lang='ru' href="" class="nav-item nav-link nav-list">Реанимационное оборудование </a>
+                                    <a lang='ru' href="" class="nav-item nav-link nav-list">Хирургическое оборудование</a>
+                                    <a lang='ru' href="" class="nav-item nav-link nav-list">Диагностическое оборудование</a>
+                                    <a lang='ru' href="" class="nav-item nav-link nav-list">Физиотерапевтическое оборудование</a>
+                                    <a lang='ru' href="" class="nav-item nav-link nav-list">Рентгенологическое оборудование</a>
+                                    <a lang='en' href="" class="nav-item nav-link nav-list">Resuscitation equipment </a>
+                                    <a lang='en' href="" class="nav-item nav-link nav-list">Surgical equipment</a>
+                                    <a lang='en' href="" class="nav-item nav-link nav-list">Diagnostic equipment</a>
+                                    <a lang='en' href="" class="nav-item nav-link nav-list">Physiotherapy equipment</a>
+                                    <a lang='en' href="" class="nav-item nav-link nav-list">X-ray equipment</a>                        
+                                    <a lang='kz'href="" class="nav-item nav-link nav-list">Реанимациялық құралдар </a>
+                                    <a lang='kz'href="" class="nav-item nav-link nav-list">Хирургиялық жабдық</a>
+                                    <a lang='kz'href="" class="nav-item nav-link nav-list">Диагностикалық жабдық</a>
+                                    <a lang='kz'href="" class="nav-item nav-link nav-list">Физиотерапиялық құралдар</a>
+                                    <a lang='kz'href="" class="nav-item nav-link nav-list">Рентгендік аппаратура</a>
+                                
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-9">
+
+                        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" style="height: 500px;">
+                                    <img class="img-fluid" src="{{ url_for('static', filename= 'img/slider/11.jpeg') }}" alt="Image">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="p-3 pt-2 mt-4" style="max-width: 1000px;">
+                                                <h2 lang ='kz' class="text-light text-uppercase font-weight-medium text-primary">IMEC кең ауқымды қызметтерді ұсынады</h2>
+                                                <h3 lang ='kz' class="text-light text-uppercase font-weight-medium text-primary">(емханалар мен бөлімшелерге қызмет көрсету, жөндеу, жабдықтау)</h3>
+                                                <h2 lang ='en' class="text-light text-uppercase font-weight-medium text-primary">IMEC provides a wide range of services</h2>
+                                                <h3 lang ='en' class="text-light text-uppercase font-weight-medium text-primary">(service, repair, equipment of clinics and turnkey departments)</h3>
+                                                <h2 lang ='ru' class="text-light text-uppercase font-weight-medium text-primary">IMEC предоставляет широкий ассортимент услуг</h2>
+                                                <h3 lang ='ru' class="text-light text-uppercase font-weight-medium text-primary">(сервис, ремонт, оснащение клиник и отделений «под ключ»)</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="height: 500px;">
+                                    <img class="img-fluid" src="{{ url_for('static', filename= 'img/slider/22.jpg') }}" alt="Image">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="p-3 pt-2 mt-4" style="max-width: 1000px;">
+                                            <h2 lang ='kz' class="text-light text-uppercase font-weight-medium text-primary">Жауаптар мен шешімдер түрі бойынша</h2>
+                                            <h3 lang ='kz' class="text-light text-uppercase font-weight-medium text-primary">медициналық жабдықты және сату шарттарын мүмкіндігінше тезірек</h3>
+                                            <h2 lang ='en' class="text-light text-uppercase font-weight-medium text-primary">Answer and solutions by type</h2>
+                                            <h3 lang ='en' class="text-light text-uppercase font-weight-medium text-primary">medical equipment and terms of sale as soon as possible</h3>
+                                            <h2 lang ='ru' class="text-light text-uppercase font-weight-medium text-primary">Ответ и решения по видам</h2>
+                                            <h3 lang ='ru' class="text-light text-uppercase font-weight-medium text-primary">медицинского оборудования и условиям продажи в кратчайшие сроки</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="height: 500px;">
+                                    <img class="img-fluid" src="{{ url_for('static', filename= 'img/slider/3.PNG') }}" alt="Image">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="p-3 pt-2 mt-4" style="max-width: 1000px;">
+                                            <h2 lang ='kz' class="text-light text-uppercase font-weight-medium text-primary">Емханалардың жаңа технологияға қажеттілігін анықтау,</h2>
+                                            <h3 lang ='kz' class="text-light text-uppercase font-weight-medium text-primary">техникалық шарттарды және клиникалық-техникалық негіздемелерді дайындау, құны мен сапасын бағалау, жаңа медициналық техниканы қабылдау және іске қосу</h3>
+                                            <h2 lang ='en' class="text-light text-uppercase font-weight-medium text-primary">Determining the needs of clinics in new technology,</h2>
+                                            <h3 lang ='en' class="text-light text-uppercase font-weight-medium text-primary">preparation of technical specifications and clinical and technical justification, cost and quality assessment, acceptance and commissioning of new medical equipment</h3>
+                                            <h2 lang ='ru' class="text-light text-uppercase font-weight-medium text-primary">Определение потребностей клиник в новой технике,</h2>
+                                            <h3 lang ='ru' class="text-light text-uppercase font-weight-medium text-primary">подготовке технических спецификаций и клинико-технического обоснования, оценки стоимости и качества, приемке и вводе в эксплуатацию новой медицинской техники</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item" style="height: 410px;">
-                                <img class="img-fluid" src="{{ url_for('static', filename= 'img/carousel-2.jpg') }}" alt="Image">
-                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                    <div class="p-3" style="max-width: 700px;">
-                                        <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
-                                        <h3 class="display-4 text-white font-weight-semi-bold mb-4">Reasonable Price</h3>
-                                        <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
-                                    </div>
+                            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                                    <span class="carousel-control-prev-icon mb-n2"></span>
                                 </div>
-                            </div>
+                            </a>
+                            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                                    <span class="carousel-control-next-icon mb-n2"></span>
+                                </div>
+                            </a>
                         </div>
-                        <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-                            <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                                <span class="carousel-control-prev-icon mb-n2"></span>
-                            </div>
-                        </a>
-                        <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                            <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                                <span class="carousel-control-next-icon mb-n2"></span>
-                            </div>
-                        </a>
                     </div>
                 </div>
             </div>
-        </div>
+    
         <!-- End Catalog products -->
+                <!-- <div class="container-fluid py-5">
+                    <div class="row">
+                        <div class="col-md-5 text-center bg-primary">
+                            <img class="py-6 my-5" src="{{ url_for('static', filename= 'img/1head.png') }}" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            div
+                        </div>
+                    </div>
+
+                </div> -->
         <!-- Start Medical service -->
-        <div class="container-fluid pt-5">
-            <div class="row pt-5 pb-5" style="background-color: #F8FCFC">
-                <div class="card-p1 col-md-6 d-flex align-content-center flex-wrap pt-5 pl-5">
-                        <h1 class="zoom-11 text-dark">Медицинские услуги</h1>
-                        <span class="zoom-11">We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.</span></div>
-                <div class="col-md-6 d-flex align-content-center flex-wrap justify-content-center pt-5 pb-5 pl-5">
-                    <div class="row pl-5">
-                        <div class="card-promotion card my-3 mx-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        <div class="card-promotion card my-3 mx-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="container-fluid pt-5" style="background-color: #D6E1E7;">
+            <div class="row px-xl-5">
+                <div class="col-lg-5 pb-0">
+                    <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active text-center">
+                                <img class="head img-fluid" src="{{ url_for('static', filename= 'img/1head.png') }}" alt="Image">
                             </div>
                         </div>
                     </div>
-                    <div class="row pl-5">
-                        <div class="card-promotion card my-3 mx-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        <div class="card-promotion card my-3 mx-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
+                </div>
+    
+                <div class="col-lg-7 px-5 pb-5 text-left pt-5 mt-5">
+                    <p lang = 'ru' class="mb-4 h3" style="color: #26343D; "> Динамизм работы ТОО "IMEC"- совокупность квалификации и культуры, ориентированная на рост. 
+                        Ответ и решения по видам медицинского оборудования и условиям продажи в кратчайшие сроки.
+                    </p>
+                    <p lang = 'ru' class="mb-4 h3" style="color: #26343D;">Сфера деятельности IMEC – услуги по сервисному обслуживанию, ремонту и поставкам медицинского оборудования и систем медицинского газоснабжения</p>
+                    <p lang = 'ru' class="pt-5 h4" style="font-style: italic;">Директор: Колобаев О.С</p>   
+                    <p lang = 'kz' class="mb-4 h3" style="color: #26343D; "> «IMEC» ЖШС жұмысының динамизмі – біліктілік пен өсуге бағытталған мәдениеттің үйлесімі.
+                        Медициналық техниканың түрлері мен сату шарттары бойынша қысқа мерзімде жауап беру және шешім қабылдау.
+                                        </p>
+                    <p lang = 'kz' class="mb-4 h3" style="color: #26343D;">IMEC қызмет саласы медициналық техника мен медициналық газбен жабдықтау жүйелеріне техникалық қызмет көрсету, жөндеу және жабдықтау қызметтері болып табылады</p>
+                    <p lang = 'kz' class="pt-5 h4" style="font-style: italic;">Директор: Колобаев О.С</p> 
+                    <p lang = 'en' class="mb-4 h3" style="color: #26343D; "> The dynamism of the work of IMEC LLP is a combination of qualifications and a growth-oriented culture.
+                        Answer and decisions on the types of medical equipment and conditions of sale in the shortest possible time.
+                    </p>
+                    <p lang = 'en' class="mb-4 h3" style="color: #26343D;">The field of activity of IMEC is services for maintenance, repair and supply of medical equipment and medical gas supply systems</p>
+                    <p lang = 'en' class="pt-5 h4" style="font-style: italic;">Director: Kolobaev O.S.</p>  
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid pt-5 px-5 pb-2 mx-auto">
+            <div class="row pt-5 pb-5">
+                <div class="container col-sm-12 text-center card-p1 col-md-12 pt-5 pl-5 mb-1 pb-1">
+                        <h1 lang = 'ru' class="headline-blue">Медицинские услуги</h1>
+                        <h1 lang = 'kz' class="headline-blue">Медициналық қызметтер</h1>
+                        <h1 lang = 'en' class="headline-blue">Medical services</h1>
+                </div>
+                <div class="row medical-service d-flex pt-3 mt-3">
+                    <div class="service text-center col-md-3 col-xs-12 col-sm-12">
+                        <i class="icofont-settings-alt px-2"></i>
+                        <p lang = 'ru'>Сервисное обслуживание, диагностика и ремонт медицинской техники и оборудования медицинского газоснабжения</p>
+                        <p lang = 'kz'>Медициналық техникаға және медициналық газбен жабдықтауға қызмет көрсету, диагностикалау және жөндеу</p>
+                        <p lang = 'en'>Service, diagnostics and repair of medical equipment and medical gas supply equipment</p>
                     </div>
+                    <div class="service text-center col-md-3 col-xs-12 col-sm-12">
+                        <i class="icofont-fast-delivery px-2"></i>
+                        <p lang = 'ru'>Закуп и поставка медоборудования и запчастей от заводов-изготовителей на основе 
+                            дистрибьюторских соглашений на поставку, установка и ввод в эксплуатацию.</p>
+                        <p lang = 'kz'>негізінде өндірушілерден медициналық техника мен қосалқы бөлшектерді сатып алу және жеткізу
+                            жеткізу, орнату және іске қосу бойынша дистрибьюторлық келісімдер.</p>
+                        <p lang = 'en'>Purchase and supply of medical equipment and spare parts from manufacturers based on
+                            distribution agreements for the supply, installation and commissioning.</p>
+                    </div>
+                    <div class="service text-center col-md-3 col-xs-12 col-sm-12">
+                        <i class="icofont-wrench px-2"></i>
+                        <p lang = 'ru'>Гарантийное и послегарантийное <br lang = 'ru'> техническое обслуживание, <br lang = 'ru'>  профилактика</p>
+                        <p lang = 'kz'>Кепілдік және кейінгі кепілдік <br lang = 'kz'> техникалық қызмет көрсету, <br lang = 'kz'>  алдын алу</p>
+                        <p lang = 'en'>Warranty and post-warranty<br lang = 'en'> Maintenance, <br lang = 'en'>  prevention</p>
+                    </div>
+                    <div class="service text-center col-md-3 col-xs-12 col-sm-12">
+                        <i class="icofont-screw-driver px-2"></i>
+                        <p lang = 'ru'>Оснащение с поставкой, монтажом клиник, отделений клиник, оснащение отделений реанимации и операционных блоков («под ключ»)</p>
+                        <p lang = 'kz'>Емханаларды, емхана бөлімдерін, реанимация бөлімшелері мен операциялық бөлімшелерді жеткізу, монтаждау ("кілтпен тапсыру") жабдықтары</p>
+                        <p lang = 'en'>Equipment with delivery, installation of clinics, clinic departments, equipment of intensive care units and operating units ("turnkey"))</p>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -110,21 +183,27 @@
                 <div class="container-fluid bg-primary">
                     <div class="row justify-content-center">
                         <div class="we-achived text-center text-white">
-                            <h1 class="zoom-11 py-5">Наши достижения</h1>
+                            <h1 lang = 'ru' class="py-5">Наши достижения</h1>
+                            <h1 lang = 'kz' class="py-5">Біздің жетістіктеріміз</h1>
+                            <h1 lang = 'en' class="py-5">Our achievements</h1>
                         </div>
                     </div>
                     <div class="row justify-content-around pb-5">
-                        <div class="we-achived-numbers justify-content-center">
-                            <h1 class="text-center">30</h1>
-                            <p>Клиент</p>
+                        <div class="col-md-4 col-xs-12 col-sm-12 we-achived-numbers justify-content-center">
+                            <h1 class="text-center">1234</h1>
+                            <p class="text-center">sdsd</p>
                         </div>
-                        <div class="we-achived-numbers justify-content-center">
+                        <div class="col-md-4 col-xs-12 col-sm-12 we-achived-numbers justify-content-center">
                             <h1 class="text-center">300+</h1>
-                            <p class="pl-2">Установок</p>
+                            <p lang = 'ru' class="text-center">Установок</p>
+                            <p lang = 'kz' class="text-center">Орнатулар</p>
+                            <p lang = 'en' class="text-center">Installations</p>
                         </div>
-                        <div class="we-achived-numbers justify-content-center">
+                        <div class="col-md-4 col-xs-12 col-sm-12 we-achived-numbers justify-content-center">
                             <h1 class="text-center">8</h1>
-                            <p>На рынке</p>
+                            <p lang = 'ru' class="text-center">На рынке</p>
+                            <p lang = 'kz' class="text-center">Базарда</p>
+                            <p lang = 'en' class="text-center">On the market</p>
                         </div>
                 
                     </div>
@@ -173,53 +252,41 @@
         <!-- Start our customers -->
         <div class="container-fluid bg-primary pb-5">
             <div class="we-achived"><h1 class="text-center text-white py-5">Наши клиенты</h1></div>
-            <div class="row justify-content-center">
-                <a href="#">
-                    <div class="card-promotion card my-3 mx-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Название карточки</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                content.</p>
-                        </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
-                </a>
-                <a href="#">
-                    <div class="card-promotion card my-3 mx-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Название карточки</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                content.</p>
-                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                </a>
-                <a href="#">
-                    <div class="card-promotion card my-3 mx-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Название карточки</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                content.</p>
-                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
                 </a>
-                <a href="#">
-                    <div class="card-promotion card my-3 mx-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Название карточки</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                content.</p>
-                        </div>
-                    </div>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
                 </a>
-                <a href="#">
-                    <div class="card-promotion card my-3 mx-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Название карточки</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                content.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+              </div>
         </div>
         <!-- End our customers -->
         <!-- Start our customers -->

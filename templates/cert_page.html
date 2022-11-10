@@ -1,0 +1,40 @@
+{% extends 'include/base.html' %}
+{% block title %} Innovation Medical Engineering Center {% endblock %}
+{% block content %}
+<!DOCTYPE html>
+
+  <body>
+    <h1 lang ='en' class="text-center mt-4 mb-5">CERTIFICATES</h1>
+    <h1 lang ='ru' class="text-center mt-4 mb-5">СЕРТИФИКАТЫ</h1>
+    <h1 lang ='kz' class="text-center mt-4 mb-5">СЕРТИФИКАТТАР</h1>
+    <div class="row mt-5"> 
+      <div class="col-md-2">
+        <div class="col-md-8">
+            <div class="column ">
+                {% for cer in cert %}
+                <div class="card mb-5" style="background-color:#f8f9fa;">
+                    <h3 lang = 'en' class="text-center mt-4 text-dark" >{{ cer.title_en }}</h3> 
+                    <h3 lang = 'ru' class="text-center mt-4 text-dark" >{{ cer.title_ru }}</h3> 
+                    <h3 lang = 'kz' class="text-center mt-4 text-dark" >{{ cer.title_kz }}</h3> 
+                    <div class="card-body" style="background-color:#f8f9fa;">
+                        <img  src='/static/files/{{ cer.path }}'  class="btn btn-info"  height = 300 width = 400 alt="" style="float: left; margin-right: 15px;">
+                    </div>
+                    <p class="text-dark" align="right">{{ cer.date_posted|safe }} </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+      </div>
+    </div>
+
+     
+
+    <script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    </script>
+    
+  </body>
+</html>
+{% endblock %}

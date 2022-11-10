@@ -2,7 +2,7 @@
 {% block title %} Innovation Medical Engineering Center {% endblock %}
 {% block content %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>IMEC НОВОСТИ</title>
   </head>
@@ -11,54 +11,30 @@
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <div class="column ">
-          {%if l == 'en'%}
 
           {% for news in news_articles %}
             
           <div class="card mb-5" style="background-color:#f8f9fa;">
-            <h1 class="text-center mt-4">{{ news.title_en[:100] }}</h1>
+            <h1 lang = 'en' class="text-center mt-4 text-dark ">{{ news.title_en[:100] }}</h1>
+            <h1 lang = 'ru' class="text-center mt-4 text-dark">{{ news.title_ru[:100] }}</h1>
+            <h1 lang = 'kz' class="text-center mt-4 text-dark">{{ news.title_kz[:100] }}</h1>
+
             <div class="card-body" style="background-color:#f8f9fa;">
             
-                <img src='/static/files/{{ news.path }}' height = 300 width = 400 alt="" style="float: left; margin-right: 15px;">
-				<p class="text-dark">{{ news.en|safe }} &#8230; </p>
-                <a href=".." style="float: right;"class="btn btn-primary">{{ _('%(who)s', who=back)}}</a>
+                <img src='/static/files/{{ news.path }}'  height = 300 width = 400 alt="" style="float: left; margin-right: 15px;">
+        
+                <h6 lang = 'en' class="text-muted" >{{ news.en|safe }} </h6>
+                <h6 lang = 'ru' class="text-muted">{{ news.ru|safe }} </h6>
+                <h6 lang = 'kz' class="text-muted" >{{ news.kz|safe }} </h6>
+            </img>
+                <a lang = 'en' href="../news" style="float: right;"class="btn btn-primary">Return</a>
+                <a lang = 'ru' href="../news" style="float: right;"class="btn btn-primary">Вернуться</a>
+                <a lang = 'kz' href="../news" style="float: right;"class="btn btn-primary">Қайту</a>
             </div>
         </div>
 
           {% endfor %}
-          {%endif%}
-          {%if l == 'ru'%}
           
-          {% for news in news_articles %}
-            
-          <div class="card mb-5" style="background-color:#f8f9fa;">
-            <h1 class="text-center mt-4">{{ news.title_ru[:100] }}</h1>
-            <div class="card-body" style="background-color:#f8f9fa;">
-            
-                <img src='/static/files/{{ news.path }}' height = 300 width = 400 alt="" style="float: left; margin-right: 15px;">
-				<p class="text-dark">{{ news.ru|safe }} &#8230; </p>
-                <a href="/../" style="float: right;"class="btn btn-primary">{{ _('%(who)s', who=back)}}</a>
-            </div>
-        </div>
-
-          {% endfor %}
-          {%endif%}
-          {%if l == 'kk'%}
-          
-          {% for news in news_articles %}
-            
-          <div class="card mb-5" style="background-color:#f8f9fa;">
-            <h1 class="text-center mt-4">{{ news.title_kz[:100] }}</h1>
-            <div class="card-body" style="background-color:#f8f9fa;">
-            
-                <img src='/static/files/{{ news.path }}' height = 300 width = 400 alt="" style="float: left; margin-right: 15px;">
-				<p class="text-dark">{{ news.kz|safe }} &#8230; </p>
-                <a href="/../" style="float: right;"class="btn btn-primary">{{ _('%(who)s', who=back)}}</a>
-            </div>
-        </div>
-
-          {% endfor %}
-          {%endif%}
         </div>
       </div>
       <div class="col-md-2"></div>
