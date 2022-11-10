@@ -33,8 +33,8 @@ app.config['CKEDITOR_FILE_UPLOADER'] = 'upload'
 # configuration of mail
 app.config['MAIL_SERVER']='smtp.office365.com'
 app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = '1155121354@link.cuhk.edu.hk'
-app.config['MAIL_PASSWORD'] = 'Nfp%^hc5pjpm3d$'
+app.config['MAIL_USERNAME'] = ''
+app.config['MAIL_PASSWORD'] = ''
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 app.config['FLASK_ADMIN_SWATCH'] = 'flatly'   #lumen cyborg flatly
